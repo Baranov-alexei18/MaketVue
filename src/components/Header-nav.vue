@@ -6,7 +6,7 @@
         </h3>
     </header>
      
-  <nav class="navbar navbar-expand-sm navbar-dark">
+  <nav class="navbar navbar-expand-sm navbar-dark nav">
   <div class="container">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
       <span class="navbar-toggler-icon"></span>
@@ -55,11 +55,8 @@
   .navbar-dark{
     background: black;
   }
-  .nav_link{
-    font-family: "ProximaNova";
-    font-size: 18px;
-    color: yellow;
-    text-align: center;
+  .nav{
+    padding-left: 10% !important;
   }
-
+  
 </style>

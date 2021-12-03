@@ -1,1 +1,22 @@
-﻿
+﻿@charset "UTF-8";
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/13609.eot");
+  src: local("☺"), url("../fonts/13609.woff") format("woff"), url("../fonts/13609.ttf") format("truetype"), url("../fonts/13609.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ProximaNova_Conversed";
+  src: url("../fonts/9168.eot");
+  src: local("☺"), url("../fonts/9168.woff") format("woff"), url("../fonts/9168.ttf") format("truetype"), url("../fonts/9168.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ProximaNova_light";
+  src: url("../fonts/10355.eot");
+  src: local("☺"), url("../fonts/10355.woff") format("woff"), url("../fonts/10355.ttf") format("truetype"), url("../fonts/10355.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
