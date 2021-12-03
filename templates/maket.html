@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" >
+     <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Shop</title>
+</head>
+<body>
+  <!-- HEADER -->
+  <div class="main" >
+    <header class="head">
+        <h3 class="header-text">
+            Whatever header they currently use goes here
+        </h3>
+    </header>
+  </div>
+  <!-- Panel Navbar -->
+  <div class="panel_nav">
+            <nav class="navbar navbar-expand-sm">
+                <div class="container navbar-dark">                
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Переключатель навигации">    
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Men's</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Women's</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Kids</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Sports</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Brands</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Collections</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+     </div>
+    
+    <!--  -->
+    <div class="bg_div">
+      <img src="/img/bg.jpg"  class="bg img-fluid" alt=" ">
+      <div class="col-5 text_block_div">
+        <h3>Big Title Here</h3>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Nunc sed malesuada sapien. Nulla aliquam orci nec massa hendrerit tincidunt.
+          Donec in sollicitudin lacus. Curabitur et faucibus nulla.
+          Maecenas sit amet semper libero, in iaculis   felis. Aliquam erat volutpat. 
+          Donec sollicitudin turpis eget tortor tincidunt euismod.</p>
+        
+        <button class="btn_show">
+          SHOW ME MORE
+        </button>
+      </div>
+    </div>
+    
+    <div class="container col-10 catalog_shop ">
+          <div class="row gx-5">
+            <div class="col-6 catalog_shop_elements">
+                <img src="/img/catalog_1.jpg"  class="bg img-fluid" alt=" ">
+                <div class="text_block_div_1">
+                 <p class="p_catalog_title_1">2014 Chuck Taylor ALL STARS</p>
+                 
+                 <p class="p_catalog_text_1">NOW IN STOCK!</p>
+                 <p class="p_catalog_text_1">FREE SHIPPING</p>
+                 <p class="p_catalog_text_1_last" > STARTING AT $24.99</p>
+                 <button class="btn_show">
+                   SHOW ME MORE
+                 </button>
+              </div>
+            </div>
+
+          <div class="col-6 catalog_shop_elements">
+            <div class="bg_fon">
+              <img src="/img/catalog_2.jpg"  class="bg img-fluid" alt=" ">
+            </div>
+            
+            <div class="text_block_div_1">
+              <p class="p_catalog_title_2">2014 Le Blanc Dress Shoes</p>
+              
+              <p class="p_catalog_text_2">NOW IN STOCK!</p>
+              <p class="p_catalog_text_2">FREE SHIPPING</p>
+              <p class="p_catalog_text_2_last" >STARTING AT $299.99</p>
+              
+              <button id="btn_catalog_2" class="btn_show">
+                SHOW ME MORE
+              </button>
+            </div>
+          </div>
+        </div>
+  </div>
+
+    <div class="col-6 cat_shop_carousel">
+      <div id="catalog_shop_carousel" class="carousel slide  w-100" data-bs-ride="carousel">
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="catalog_shop_elements_carousel">
+              <img src="/img/catalog_1.jpg"  class="bg img-fluid" alt=" ">
+              <div class="text_block_div_2">
+               <p class="p_catalog_title_1">2014 Chuck Taylor ALL STARS</p>
+               
+               <p class="p_catalog_text_1">NOW IN STOCK!</p>
+               <p class="p_catalog_text_1">FREE SHIPPING</p>
+               <p class="p_catalog_text_1_last" > STARTING AT $24.99</p>
+               <button class="btn_show">
+                 SHOW ME MORE
+               </button>
+            </div>
+            </div>
+          </div>
+    
+          <div class="carousel-item">
+            <div class="catalog_shop_elements_carousel">
+              <div class="bg_fon">
+                <img src="/img/catalog_2.jpg"  class="bg img-fluid" alt=" ">
+              </div>
+              
+              <div class="text_block_div_2">
+                <p class="p_catalog_title_2">2014 Le Blanc Dress Shoes</p>
+                
+                <p class="p_catalog_text_2">NOW IN STOCK!</p>
+                <p class="p_catalog_text_2">FREE SHIPPING</p>
+                <p class="p_catalog_text_2_last" >STARTING AT $299.99</p>
+                
+                <button id="btn_catalog_2" class="btn_show">
+                  SHOW ME MORE
+                </button>
+              </div>
+            </div>
+          </div>            
+        </div>      
+       </div>
+  </div>
+
+  <!-- FEATURED PRODUCTS and LATEST PRODUCTS-->
+  
+  <div class="container col-12 col-md-10  main_shop">
+    <div class="row gx-5">
+      <div class="col-12 col-md-9 shop_products">
+        <p class="featured_products">FEATURED PRODUCTS</p>
+        <div class="featured_products_list">
+            <ul class="list_product" >
+              <li class="list_product_item">
+                <div class="cross">
+                <div class="pic_cross">
+                  <img src="/img/cross_1.JPG" class="bg img-fluid" alt="">
+                  <div class="img_new">
+                     <img src="/img/new.jpg" class="bg img-fluid" alt="">
+                  </div>
+                </div>
+                  <div class="cross_price">
+                    <p>Sample Item Title</p>
+                    <p class="price">$99.<sup><small>99</small></sup></p>
+                  </div>
+                </div>
+              </li>
+              <li class="list_product_item">
+                <img src="/img/cross_2.JPG" class="bg img-fluid" alt="">
+                  
+                  <div class="cross_price">
+                    <p>Sample Item Title</p>
+                    <p class="price">$99.<sup><small>99</small></sup></p>
+                  </div>
+              </li>
+              <li class="list_product_item">
+                <div class="pic_cross">
+                  <img src="/img/cross_3.JPG" class="bg img-fluid" alt="">
+                  <div class="img_new">
+                     <img src="/img/sale.jpg" class="bg img-fluid" alt="">
+                  </div>
+                </div>
+                  <div class="cross_price">
+                    <p>Sample Item Title</p>
+                    <p class="price">$99.<sup><small>99</small></sup></p>
+                  </div>
+                
+              </li>
+            </ul>
+        </div>
+        
+        <p class="featured_products">LATEST PRODUCTS</p>
+        <div class="latest_products_list">
+            <ul  class="list_product" >
+              <li class="list_product_item">
+                <div class="pic_cross">
+                  <img src="/img/cross_1.JPG" class="bg img-fluid" alt="">
+                  <div class="img_new">
+                     <img src="/img/new.jpg" class="bg img-fluid" alt="">
+                  </div>
+                </div>
+                  <div class="cross_price">
+                    <p>Sample Item Title</p>
+                    <p class="price">$99.<sup><small>99</small></sup></p>
+                  </div>
+                
+              </li>
+              <li class="list_product_item">
+                <img src="/img/cross_2.JPG" class="bg img-fluid" alt="">
+                  
+                  <div class="cross_price">
+                    <p>Sample Item Title</p>
+                    <p class="price">$99.<sup><small>99</small></sup></p>
+                  </div>
+              </li>
+              <li class="list_product_item">
+                <div class="pic_cross">
+                  <img src="/img/cross_3.JPG" class="bg img-fluid" alt="">
+                  <div class="img_new">
+                     <img src="/img/sale.jpg" class="bg img-fluid" alt="">
+                  </div>
+                </div>
+                  <div class="cross_price">
+                    <p>Sample Item Title</p>
+                    <p class="price">$99.<sup><small>99</small></sup></p>
+                  </div>
+                
+              </li>
+              <li class="list_product_item">
+                <div class="pic_cross">
+                  <img src="/img/cross_1.JPG" class="bg img-fluid" alt="">
+                  <div class="img_new">
+                     <img src="/img/new.jpg" class="bg img-fluid" alt="">
+                  </div>
+                </div>
+                  <div class="cross_price">
+                    <p>Sample Item Title</p>
+                    <p class="price">$99.<sup><small>99</small></sup></p>
+                  </div>
+                
+              </li>
+              <li class="list_product_item">
+                <img src="/img/cross_2.JPG" class="bg img-fluid" alt="">
+                  
+                  <div class="cross_price">
+                    <p>Sample Item Title</p>
+                    <p class="price">$99.<sup><small>99</small></sup></p>
+                  </div>
+              </li>
+              <li class="list_product_item">
+                <div class="pic_cross">
+                  <img src="/img/cross_3.JPG" class="bg img-fluid" alt="">
+                  <div class="img_new">
+                     <img src="/img/sale.jpg" class="bg img-fluid" alt="">
+                  </div>
+                </div>
+                  <div class="cross_price">
+                    <p>Sample Item Title</p>
+                    <p class="price">$99.<sup><small>99</small></sup></p>
+                  </div>
+              </li>
+            </ul>
+        </div>  
+
+      </div>
+
+      <!-- aside -->
+      <div class="col-3">
+        <div class="aside">
+          <div class="aside_categories">
+            <p class="p_aside">CATEGORIES</p>
+            <ul class="categories_list">
+              <li class="categories_list_item">
+                <div class="container">
+                  <div class="row justify-content-between">
+                    <div class="col-3 mycol">
+                      <p class="p_item">Men's</p>
+                    </div>
+                    <div class="col mycol">
+                      <img src="/img/tire.jpg" class="bg img-fluid" style="padding-left: 2%; padding-right: 1%;" alt="">
+                    </div>
+                    
+                    <div class="col-2 mycol">
+                      <span type="button" class="circle_btn">+</span>
+                    </div>
+                        
+                  </div>
+                </div>
+                
+              </li>
+              <li class="categories_list_item">
+                <div class="container">
+                  <div class="row justify-content-between">
+                    <div class="col-4 mycol">
+                      <p class="p_item">Women's</p>
+                    </div>
+                    <div class="col mycol">
+                      <img src="/img/tire.jpg" class="bg img-fluid" style="padding-left: 2%; padding-right: 1%;" alt="">
+                    </div>
+                    <div class="col-2 mycol">
+                      <span type="button" class="circle_btn">+</span>
+                    </div>  
+                  </div>
+                </div>
+              </li>
+              <li class="categories_list_item">
+                <div class="container">
+                  <div class="row justify-content-between">
+                    <div class="col-2 mycol">
+                      <p class="p_item">Kids</p>
+                    </div>
+                    <div class="col mycol">
+                      <img src="/img/tire.jpg" class="bg img-fluid" style=" padding-left: 2%; padding-right: 1%;" alt="">
+                    </div>
+                    <div class="col-2 mycol">
+                      <span type="button" class="circle_btn">+</span>
+                    </div>  
+                  </div>
+                </div>
+              </li>
+              <li class="categories_list_item">
+                <div class="container">
+                  <div class="row justify-content-between">
+                    <div class="col-3 mycol">
+                      <p class="p_item">Sports</p>
+                    </div>
+                    <div class="col mycol">
+                      <img src="/img/tire.jpg" class="bg img-fluid" style="padding-left: 2%; padding-right: 1%;" alt="">
+                    </div>
+                    <div class="col-2 mycol">
+                      <span type="button" class="circle_btn">+</span>
+                    </div>  
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        
+          <div class="aside_sellers">
+            <p class="p_aside">BEST SELLERS</p>
+            <div class="sellers_cell">
+              <div class="sellers_pic">
+              <img src="/img/cross_1_aside.jpg" style="margin-bottom: 1px;"  alt="">
+              </div>
+              <div class="sellers_text">
+              <p>Sample Item Title Goes Here</p>
+              <p class="price_1">
+                $120.<sup><small style="border-bottom: 1px solid #cdcdcd;">00</small></sup>
+              </p>
+              <p class="price_2">
+                $120.<sup><small >00</small></sup>
+              </p>
+              </div>     
+            </div>
+          
+            <div class="sellers_cell">
+              <div class="sellers_pic">
+              <img src="/img/cross_1_aside.jpg" style="margin-bottom: 1px;"  alt="">
+              </div>
+              <div class="sellers_text">
+              <p class="">Sample Item Title Goes Here</p>
+              <p class="price_1">
+                $120.<sup><small style="border-bottom: 1px solid #cdcdcd;">00</small></sup>
+              </p>
+              <p class="price_2">
+                $120.<sup><small>00</small></sup>
+              </p>
+              </div>     
+            </div>
+        
+            <div class="sellers_cell">
+              <div class="sellers_pic">
+              <img src="/img/cross_1_aside.jpg" style="margin-bottom: 1px;"  alt="">
+              </div>
+              <div class="sellers_text">
+              <p>Sample Item Title Goes Here</p>
+              <p class="price_1">
+                $120.<sup><small style="border-bottom: 1px solid #cdcdcd;">00</small></sup>
+              </p>
+              <p class="price_2">
+                $120.<sup><small>00</small></sup>
+              </p>
+              </div>     
+            </div>
+
+          </div>
+        
+          <div class="aside_tags">
+          <p class="p_aside">TAGS</p>
+          <p class="tags">
+            Tag, Tag, Tag, Tag, Tag, Tag,
+            Tag, Tag, Tag, Tag, Tag, Tag,
+            Tag, Tag, Tag, Tag, Tag, Tag,
+            Tag, Tag, Tag, Tag, Tag, Tag,
+            Tag, Tag, Tag, Tag, Tag.
+          </p>  
+          </div>
+
+          <div class="aside_offers">
+          <p class="p_aside">SPECIAL OFFERS</p>
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></li>
+              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></li>
+              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></li>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/img/cross_3_coursel.jpg" class="d-block w-100" alt="">
+                <div class="carousel_item_div">
+                  <p class="carousel-p">item Title Here</p>
+                  <p class="carousel-p-title">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                  <button class="btn_show">
+                    SHOW ME MORE
+                  </button>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="/img/cross_3_coursel.jpg" class="d-block w-100" alt="">
+                <div class="carousel_item_div">
+                  <p class="carousel-p">item Title Here</p>
+                  <p class="carousel-p-title">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                  <button class="btn_show">
+                    SHOW ME MORE
+                  </button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/img/cross_3_coursel.jpg" class="d-block w-100" alt="">
+                <div class="carousel_item_div">
+                  <p class="carousel-p">item Title Here</p>
+                  <p class="carousel-p-title">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                  <button class="btn_show">
+                    SHOW ME MORE
+                  </button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/img/cross_3_coursel.jpg" class="d-block w-100" alt="">
+                <div class="carousel_item_div">
+                  <p class="carousel-p">item Title Here</p>
+                  <p class="carousel-p-title">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                  <button class="btn_show">
+                    SHOW ME MORE
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Скрипты проекта -->
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="js/maket.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
