@@ -20,5 +20,6 @@
 
 <style lang="scss">
   
-
+.bg_div{
+}
 </style> 

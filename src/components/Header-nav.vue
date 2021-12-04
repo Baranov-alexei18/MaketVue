@@ -56,7 +56,7 @@
     background: black;
   }
   .nav{
-    padding-left: 10% !important;
+    padding-left: 6% !important;
   }
   
 </style>

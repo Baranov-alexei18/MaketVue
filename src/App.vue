@@ -1,10 +1,14 @@
 <template>
-  <div class="wrap d-flex flex-column min-vh-100">
-    <Nav />
-    <main class="flex-fill">
+  <main-container>
+    <template v-slot:header>
+      <Nav />
+    </template>
+    
+    <main>
     <router-view/>
     </main>
-  </div>
+    
+  </main-container>
 </template>
 
 
@@ -17,9 +21,13 @@
 
 <script>
 import Nav from "./components/Header-nav.vue";
+import MainContainer from './components/MainContainer.vue';
 
 export default{
-  components: {Nav}
+  components: {
+    Nav,
+    MainContainer,
+    }
 }
 </script>
 
