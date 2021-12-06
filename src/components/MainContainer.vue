@@ -5,7 +5,7 @@
         </header>
 
         <main  class="flex-fill container-fluid ">
-            <div class="row p-0">
+            <div class="row">
                 <slot></slot>
             </div>
             
@@ -15,6 +15,8 @@
 </template>
 
 <style scoped>
-
+.flex-fill{
+ padding-left: 0;   
+}
 
 </style>
