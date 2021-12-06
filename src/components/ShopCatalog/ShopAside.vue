@@ -463,10 +463,7 @@ width: 100%;
   .col-3{
     width: 20%;
   }
-  img{
-    
-    width: 120%;
-  }
+  
 }
 
 </style>

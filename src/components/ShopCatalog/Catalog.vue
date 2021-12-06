@@ -135,6 +135,18 @@ small {
           justify-content: center;
     max-width: 100%;
 }
+.shop_products .list_product {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  margin-top: 6%;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 .shop_products .featured_products {
   font-family: "ProximaNova_Conversed";
   font-size: 32px;
