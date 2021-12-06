@@ -465,5 +465,12 @@ width: 100%;
   }
   
 }
-
+@media (max-width: 992px) {
+  .categories_list_item:nth-child(2) {
+     .img_list img{
+       padding-left: 10%;
+       max-width: 80%;
+     }
+  }
+}
 </style>
