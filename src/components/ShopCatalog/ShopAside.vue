@@ -3,67 +3,21 @@
         <div class="aside">
           <div class="aside_categories">
             <p class="p_aside">CATEGORIES</p>
-            <ul class="categories_list">
-              <li class="categories_list_item">
+            <ul id="btn_active_list" class="categories_list">
+              <li class="categories_list_item" v-for="(item,index) in items" :key="index">
                 <div class="container">
                   <div class="row justify-content-between">
                     <div class="col-3 mycol">
-                      <p class="p_item">Men's</p>
+                      <p class="p_item">{{item.title}}</p>
                     </div>
-                    <div class="col img_list">
+                    <div class="col img_list p-0">
                       <img src="../../assets/img/tire.jpg" class="bg img-fluid" alt="">
                     </div>
                     
                     <div class="col-2 mycol">
-                      <span type="button" class="circle_btn">+</span>
-                    </div>
-                        
-                  </div>
-                </div>
-                
-              </li>
-              <li class="categories_list_item">
-                <div class="container">
-                  <div class="row justify-content-between">
-                    <div class="col-4 mycol">
-                      <p class="p_item">Women's</p>
-                    </div>
-                    <div class="col img_list">
-                      <img src="../../assets/img/tire.jpg" class="bg img-fluid" alt="">
-                    </div>
-                    <div class="col-2 mycol">
-                      <span type="button" class="circle_btn">+</span>
-                    </div>  
-                  </div>
-                </div>
-              </li>
-              <li class="categories_list_item">
-                <div class="container">
-                  <div class="row justify-content-between">
-                    <div class="col-2 mycol">
-                      <p class="p_item">Kids</p>
-                    </div>
-                    <div class="col img_list">
-                      <img src="../../assets/img/tire.jpg" class="bg img-fluid"  alt="">
-                    </div>
-                    <div class="col-2 mycol">
-                      <span type="button" class="circle_btn">+</span>
-                    </div>  
-                  </div>
-                </div>
-              </li>
-              <li class="categories_list_item">
-                <div class="container">
-                  <div class="row justify-content-between">
-                    <div class="col-3 mycol">
-                      <p class="p_item">Sports</p>
-                    </div>
-                        <div class="col img_list">
-                            <img src="../../assets/img/tire.jpg" class="bg img-fluid"  alt="">
-                        </div>
-                    <div class="col-2 mycol">
-                      <span type="button" class="circle_btn">+</span>
-                    </div>  
+                      <span type="button" class="circle_btn"  v-if="plus==='+'"  v-on:click="ActiveButton">{{plus}}</span>
+                      <span type="button" class="circle_btn_active" v-else-if="plus==='-'"  @click="ActiveButton"> {{minus}}</span>
+                    </div>    
                   </div>
                 </div>
               </li>
@@ -134,10 +88,10 @@
           <p class="p_aside">SPECIAL OFFERS</p>
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
-              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></li>
-              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></li>
-              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></li>
+              <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+              <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></li>
+              <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></li>
+              <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></li>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -151,7 +105,7 @@
                 </div>
               </div>
 
-              <div class="carousel-item">
+              <div class="carousel-item ">
                 <img src="../../assets/img/cross_3_coursel.jpg" class="d-block w-100" alt="">
                 <div class="carousel_item_div">
                   <p class="carousel-p">item Title Here</p>
@@ -190,11 +144,35 @@
 </template>
 
 
-<script lang="ts">
-import Vue from 'vue'
-export default Vue.extend({
+<script >
+
+export default ({
+    el:'#btn_active_list',
+    data: function () {
+    return {
+      plus: '+',
+      minus: '-',
+      items: [
+          {title: "Men's"},
+          {title: "Women's"},
+          {title: "Kids"},
+          {title: "Sports"},
+      ]
+    }
+    },
     
-})
+    methods:{
+        ActiveButton: function(){
+         if(this.plus === '+'){
+        this.plus = '-';
+         }
+         else if(this.plus === '-'){
+        this.plus="+";
+        this.style.background='#6a6a6a';
+        }
+    }
+ }
+});
 
 </script>
 
@@ -203,7 +181,7 @@ export default Vue.extend({
 
 <style lang="scss">
 .col-3 {
-  padding-right: 10.3px;
+  padding-right: 0px;
 }
 .aside {
   height: 1530px;
@@ -230,7 +208,7 @@ export default Vue.extend({
   }
     }
     .aside_categories {
-    margin-top: 47px;
+    margin-top: 19%;
     background-color: #e9e9e9;
     border: 1px solid #cccccc;
     max-width: 100%;
@@ -388,6 +366,7 @@ width: 100%;
   font-size: 18px;
   color: #6a6a6a;
   padding-left: 5%;
+  padding-right: 2%;
 }
 @media (max-width: 767px) {
   .aside .aside_tags .tags {
@@ -449,12 +428,45 @@ width: 100%;
 .aside .aside_offers .carousel-indicators .active {
   background-color: #ed1c24;
 }
-.aside .aside_offers .carousel-item {
-  height: 100%;
-}
 
+.circle_btn_active{
+  font-family: "ProximaNova";
+  font-size: 18px;
+  color: white;
+  height: 18px;
+  width: 18px;
+  text-align: center;
+  padding-top: 3%;
+  border-radius: 50%;
+  background:#cd0000;
+}
+@media (max-width: 767px) {
+  .aside .p_aside {
+    font-size: calc(5px + 18.7 * ((100vw - 320px) / 1280));
+  }
+}
+@media (min-width: 767px) {
+  .aside .p_aside {
+    font-size: calc(5px + 11 * (100vw / 1280));
+  }
+}
 .mycol{
  padding-left: 2%; 
  padding-right: 1%;
 }
+.categories_list_item:nth-child(2){
+  img{
+    margin-left: 18%;
+  }
+}
+.categories_list_item:nth-child(3){
+  .col-3{
+    width: 20%;
+  }
+  img{
+    
+    width: 120%;
+  }
+}
+
 </style>

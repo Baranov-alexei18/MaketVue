@@ -1,6 +1,6 @@
 <template>
     <div class="container col-10 catalog_shop ">
-        <div class="row gx-5">
+        <div class="row gx-5 row_shop">
             <Catalog/>
             <ShopAside/>
         </div>
@@ -32,4 +32,11 @@ export default{
       -ms-flex-pack: left;
           justify-content: left;
 }
+@media(max-width: 576px){
+.row_shop{
+  margin: 0;
+}
+}
+
+
 </style>

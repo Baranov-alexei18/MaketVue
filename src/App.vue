@@ -30,4 +30,8 @@ export default{
     }
 }
 </script>
-
+<style scoped>
+main{
+  padding-right: 0;
+}
+</style>

@@ -1,6 +1,6 @@
 <template>
 <div class="container catalog_shop ">
-        <div class="row gx-5">
+        <div class="row gx-5 row_cs">
             <div id="cse_1" class="col-6 catalog_shop_elements">
                 <div class="text_block_div_1">
                  <p class="p_catalog_title_1">2014 Chuck Taylor ALL STARS</p>
@@ -117,6 +117,10 @@ padding-top: 12px;
     .catalog_shop{
         padding-top: 1%;
     }
+    .row_cs{
+        width: 100%;
+        margin: 0;
+    }
 }
 @media (max-width: 474px) {
     
@@ -124,13 +128,13 @@ padding-top: 12px;
       min-width: 100%;
     }
     .catalog_shop .catalog_shop_elements:first-child{
-        padding-left: 3%;
-        padding-right: 12px;
+        padding-left: 0;
+        padding-right: 0;
         margin-bottom: 1%;
     }
     .catalog_shop .catalog_shop_elements:last-child{
-        padding-left: 3%;
-        padding-right: 12px;
+        padding-left: 0;
+        padding-right: 0;
         margin-bottom: 1%;
     }
     

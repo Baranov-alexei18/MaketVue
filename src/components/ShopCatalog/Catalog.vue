@@ -116,7 +116,14 @@
     </div>
 </template>
 
+<script>
 
+
+export default {
+
+}
+
+</script>
 <style lang="scss">
 small {
   border-bottom: 1px solid #eac2c3;
@@ -126,7 +133,7 @@ small {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-    
+    max-width: 100%;
 }
 .shop_products .featured_products {
   font-family: "ProximaNova_Conversed";
@@ -324,5 +331,21 @@ small {
       flex-wrap: wrap;
 }
 
+@media(max-width: 474px){
+  .shop_products .latest_products_list ul.list_product li:nth-child(3n) {
+  margin-right: 4%;
+}
+}
 
+@media(max-width: 600px){
+  .shop_products { 
+    padding-left: 5px;
+  }  
+}
+@media(max-width: 360px){
+.shop_products{
+  margin: 0;
+  margin-left: 0;
+}
+}
 </style>
