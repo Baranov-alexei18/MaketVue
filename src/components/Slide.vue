@@ -1,4 +1,5 @@
 <template>
+  <div class="slide">
     <div class="bg_div">
       <img src="../assets/img/bg.jpg"  class="bg img-fluid" alt=" ">
 
@@ -16,9 +17,11 @@
         </button>
       </div>
     </div>
+  </div>
 </template>
 
 <style lang="scss">
+
   .bg_div {
   position: relative;
   max-width: 100%;

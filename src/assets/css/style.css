@@ -11,9 +11,7 @@
   box-sizing: border-box;
 }
 
-:focus, :active {
-  outline: none;
-}
+
 
 a:focus, a:active {
   outline: none;
@@ -50,10 +48,6 @@ button ::-moz-focus-inner {
 }
 
 a, a :visited {
-  text-decoration: none;
-}
-
-:hover {
   text-decoration: none;
 }
 
@@ -95,9 +89,13 @@ body {
   color: white;
   min-width: 170px;
   min-height: 50px;
+  margin-bottom: 10px;
 }
 
-
+.btn_show:hover{
+  top: -10px;
+  box-shadow: 5px 5px rgb(109, 107, 107);
+}
 
 /* ASIDE */
 
@@ -235,6 +233,7 @@ body {
     min-width: 80px;
     min-height: 24px;
   }
+ 
 
   .cross_price p {
     height: 18.5px;
@@ -272,7 +271,9 @@ body {
   }
 }
 @media (max-width: 576px) {
-  
+  .header-text {
+    display: none;
+  }
   .cross_price p {
     height: 15px;
   }
@@ -289,9 +290,7 @@ body {
   
 }
 @media (max-width: 474px) {
-  .header-text {
-    display: none;
-  }
+  
 
   .text_block_div .btn_show {
     font-size: 7px;

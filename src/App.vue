@@ -1,5 +1,5 @@
 <template>
-  <main-container>
+  <Main-container>
     <template v-slot:header>
       <Nav />
     </template>
@@ -8,7 +8,7 @@
     <router-view/>
     </main>
     
-  </main-container>
+  </Main-container>
 </template>
 
 
