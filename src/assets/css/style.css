@@ -64,33 +64,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
 }
 
-body {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #f1f1f1 !important;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: block;
-  align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
 
-.btn_show {
-  text-align: center;
-  background-color: #ed1c24;
-  border-radius: 7px;
-  font-family: "ProximaNova_Conversed";
-  font-size: 17px;
-  color: white;
-  min-width: 170px;
-  min-height: 50px;
-  margin-bottom: 10px;
-}
+
+
 
 .btn_show:hover{
   top: -10px;

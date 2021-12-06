@@ -52,9 +52,7 @@ header{
       height: 100%;
 }
 
-.head {
-  background-color: #f1f1f1;
-}
+
 
 .header-text {
   font-family: "ProximaNova";
@@ -78,12 +76,12 @@ header{
 }
 @media (max-width: 767px) {
   .header-text {
-    margin-bottom: calc(15px + 59.5 * ((100vw - 320px) / 1280));
+    margin-bottom: calc(15px + 45 * ((100vw - 320px) / 1280));
   }
 }
 @media (min-width: 767px) {
   .header-text {
-    margin-bottom: calc(15px + 35 * (100vw / 1280));
+    margin-bottom: calc(15px + 25 * (100vw / 1280));
   }
 }
 .con_nav{
@@ -153,6 +151,15 @@ padding-left: 3%;
   }
   .navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .nav-link.active{
   font-size: 14px;
+  padding-left: 1% !important;
+}
+}
+@media(max-width: 300px){
+  .navbar{
+    padding-left: 1% !important;
+  }
+  .navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .nav-link.active{
+  font-size: 12px;
   padding-left: 1% !important;
 }
 }

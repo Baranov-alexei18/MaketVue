@@ -14,7 +14,7 @@
     </div>     
 </template>
 
-<style scoped>
+<style lang="scss">
 .flex-fill{
  padding-left: 0;   
 }
